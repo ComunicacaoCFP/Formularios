@@ -1,0 +1,44 @@
+<div class="il">
+<h2>Protocolo de Experimentos</h2>
+</div>
+<form>
+<h4><mark>ATENÇÃO!</mark>&nbsp;A&nbsp;reserva deve ser solicitada com antecedência mínima de 03 (três) dias úteis.</h4>
+<h3>1- Selecione o laboratório para realizar a atividade</h3>
+<h4>Laboratórios de Física</h4>
+<div><input name="lab" type="radio" id="eleMag" /> <label for="eleMag">Laboratório de Eletromagnetismo, Ótica e Física Moderna (Sala 11)</label></div>
+<div><input name="lab" type="radio" id="ensFis" /> <label for="ensFis">Laboratório de Instrumentação para o Ensino de Física (Sala 8)</label></div>
+<div><input name="lab" type="radio" id="ondasMec" /> <label for="ondasMec">Laboratório de Ondas, Mecânica dos Fluídos e Termodinâmica (Sala 10)</label></div>
+<div><input name="lab" type="radio" id="mec" /> <label for="mec">Laboratório de Mecânica (Sala 9)</label></div>
+<h3>2 – Informações sobre a atividade:</h3>
+<label for="docente">Docente</label> <textarea name="docente" id="docente"> </textarea> <label for="compCurr">Componente Currícular</label> <textarea name="compCurr" id="compCurr"> </textarea> <label for="titulo">Título da Prática</label> <textarea name="titulo" id="titulo"> </textarea>
+<div class="wrap">
+<p>Finalidade</p>
+<input name="finalidade" type="radio" id="ensino" /> <label for="ensino">Ensino</label> <input name="finalidade" type="radio" id="pesquisa" /> <label for="pesquisa">Pesquisa</label> <input name="finalidade" type="radio" id="extensao" /> <label for="extensao">Extensão</label></div>
+<div class="sb"><label for="data">Data</label> <input name="data" required="" type="date" id="data" /></div>
+<div class="sb"><label for="horario">Horário</label> <input name="horario" required="" type="time" id="horario" style="border-radius: 0px; width: 100% !important;" />
+<p>(HH:MM)</p>
+</div>
+<h4><mark>ATENÇÃO!</mark> Em caso da utilização do Módulo CIDEPE, preencher os campos abaixo:</h4>
+<div class="sb"><label for="vol">Volume do Livro</label> <input name="vol" type="text" id="vol" /></div>
+<div class="sb"><label for="revLiv">Revisão do livro CIDEPE nº</label> <input name="revLiv" type="text" id="revLiv" /></div>
+<div class="sb"><label for="pag">Página</label> <input name="pag" type="text" id="pag" /></div>
+<div class="sb"><label for="numEx">Número do experimento**</label> <input name="numEx" type="text" id="numEx" /></div>
+<div class="sb"><label for="qtdKit">Quantidade de Kits**</label> <input name="qtdKit" type="text" id="qtdKit" /></div>
+<p>Para consultar o Módulo CIDEPE, acesse: <a href="estrutura-organizacional/229-nugtesp">Núcleo de Gestão Técnico Específico - NUGTESP</a></p>
+<h3>3 – Informe os itens necessários para a realização da atividade**:</h3>
+<label for="qtdEqM">Equipamentos / Materiais - Quantidade</label> <textarea name="qtdEqM" id="qtdEqM"></textarea> <label for="qtdRS">Reagentes / Soluções - Quantidade</label> <textarea name="qtdRS" id="qtdRS"></textarea> <label for="outros">Outros (Discriminar)</label> <textarea name="outros" id="outros"></textarea>
+<p>**Necessário verificar disponibilidade de materiais junto ao NUGTESP</p>
+<h3>4 - Termo de responsabilidade:</h3>
+<div><input checked="checked" name="comp" required="" type="checkbox" id="comp" /> <label for="comp">Comprometo-me pela guarda e uso dos materiais, equipamentos e espaços cedidos.*</label></div>
+<span class="errorTI" aria-live="polite"></span>
+<div><input checked="checked" name="termo" required="" type="checkbox" id="termo" /> <label for="termo">Declaro, para os devidos fins, estar ciente do <a href="https://drive.google.com/file/d/1NXOeP2cMU8yk9_Tn1uXRy0N3zaOJAhTh/view"> Regimento interno dos Laboratórios de Ensino, Pesquisa e Extensão do CFP</a>.*</label></div>
+<span class="errorTII" aria-live="polite"></span>
+<div class="sb wrap">
+<p>Amargosa/BA,&nbsp;</p>
+<input name="dataHoje" required="" type="date" id="dataHoje" class="obr" />*</div>
+<div class="sb"><label for="docenteAss">Docente*</label> <input name="docenteAss" required="" type="text" id="docenteAss" class="obr" /></div>
+<div class="sb"><label for="siape">Matrícula SIAPE Nº*</label> <input name="siape" required="" type="text" id="siape" class="obr" /></div>
+<div class="sb"><label for="email">E-mail*</label> <input name="email" required="" type="email" id="email" class="obr" /></div>
+<div class="sb"><label for="tel">Teleforne</label> <input name="tel" required="" type="text" id="tel" /></div>
+<p>*Obrigatório</p>
+<span class="error" aria-live="polite"></span> <button >Enviar</button></form>

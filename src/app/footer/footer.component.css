@@ -1,0 +1,9 @@
+.footer{
+    background: #181e3c;
+    color: #FFFFFF;
+    padding: 30px;
+}
+.footer > a{
+    color: #f9ff07;
+    text-decoration: none;
+}
