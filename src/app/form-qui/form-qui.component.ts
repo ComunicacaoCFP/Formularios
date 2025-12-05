@@ -24,7 +24,7 @@ export class FormQuiComponent {
     siape: "",
     email: "",
     phone: "",
-    emailTo: "allanacampos50@gmail.com"
+    emailTo: "fernandoluizm@ufrb.edu.br, robson@ufrb.edu.br, silvestre.fontana@ufrb.edu.br, geronimo@ufrb.edu.br, evandroq@ufrb.edu.br"
   }
   ngOnInit(){
     var button = <HTMLButtonElement>document.querySelector("button");
@@ -100,6 +100,8 @@ export class FormQuiComponent {
     }
   }
   public sendEmail(e: Event) {
+    var button = <HTMLButtonElement>document.querySelector("button");
+    button.innerText = "Enviando...";
     const lab = document.querySelector("input[name=lab]:checked");
     if (lab != null) { this.formObject["lab"] = (<HTMLElement>document.querySelector("label[for=" + lab.id + "]"))!.innerText; }
     const docente = document.querySelector("textarea[name=docente]");
